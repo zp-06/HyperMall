@@ -1,0 +1,93 @@
+:root {
+  /* 品牌色 */
+  --hm-primary: #e5483a;
+  --hm-primary-dark: #c73a2e;
+  --hm-text: #1f2329;
+  --hm-text-2: #4e5969;
+  --hm-text-3: #86909c;
+  --hm-bg: #f5f6f8;
+  --hm-border: #eceef1;
+  --hm-radius: 10px;
+  --hm-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+
+  /* Element Plus 主题色覆盖 */
+  --el-color-primary: #e5483a;
+  --el-color-primary-light-3: #ec7668;
+  --el-color-primary-light-5: #f2a39c;
+  --el-color-primary-light-7: #f7cfcc;
+  --el-color-primary-light-8: #fbe4e2;
+  --el-color-primary-light-9: #fdf1f0;
+  --el-color-primary-dark-2: #c73a2e;
+  --el-border-radius-base: 8px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Hiragino Sans GB',
+    'Microsoft YaHei', 'Segoe UI', Roboto, Arial, sans-serif;
+  color: var(--hm-text);
+  background: var(--hm-bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.hm-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.price {
+  color: var(--hm-primary);
+  font-weight: 600;
+}
+
+.text-muted {
+  color: var(--hm-text-3);
+}
+
+/* 通用卡片 */
+.hm-card {
+  background: #fff;
+  border-radius: var(--hm-radius);
+  box-shadow: var(--hm-shadow);
+}
+
+/* 空态占位图 */
+.img-fallback {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #c0c4cc;
+  background: #f3f4f6;
+}
+
+/* 滚动条美化 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #d3d7dd;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #b9bec6;
+}
